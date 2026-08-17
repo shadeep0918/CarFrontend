@@ -1,0 +1,310 @@
+$black: #0b0b0d;
+$white: #ffffff;
+$light: #f5f5f3;
+$gray: #777777;
+$border: #e5e5e2;
+$accent: #d8ff3e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+
+  background: $light;
+
+  color: $black;
+}
+
+
+// HERO
+
+.spec-hero {
+  min-height: 400px;
+
+  padding: 90px 8%;
+
+  background: $black;
+
+  color: $white;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+
+  span {
+    color: $accent;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+  }
+
+
+  h1 {
+    font-size: 65px;
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+    margin: 20px 0;
+
+
+    strong {
+      color: $accent;
+    }
+  }
+
+
+  p {
+    max-width: 550px;
+
+    color: #aaa;
+
+    line-height: 1.7;
+  }
+}
+
+
+// MAIN SECTION
+
+.spec-section {
+  padding: 80px 8%;
+}
+
+
+// SELECTED CAR
+
+.selected-car {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: $white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 80px;
+
+  border: 1px solid $border;
+
+
+  &__image {
+    min-height: 350px;
+
+    background: #ededeb;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      width: 90%;
+
+      height: 100%;
+
+      object-fit: contain;
+    }
+  }
+
+
+  &__content {
+    padding: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+
+    > span {
+      color: $gray;
+
+      font-size: 10px;
+
+      font-weight: 800;
+
+      letter-spacing: 3px;
+    }
+
+
+    h2 {
+      font-size: 45px;
+
+      margin: 12px 0;
+    }
+
+
+    p {
+      color: $gray;
+
+      font-size: 14px;
+
+      line-height: 1.7;
+
+      margin-bottom: 25px;
+    }
+
+
+    button {
+      width: fit-content;
+
+      padding: 13px 20px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      background: $black;
+
+      color: $white;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+
+      &:hover {
+        background: $accent;
+
+        color: $black;
+      }
+    }
+  }
+}
+
+
+// TITLE
+
+.spec-title {
+  margin-bottom: 35px;
+
+
+  span {
+    color: $gray;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+  }
+
+
+  h2 {
+    font-size: 42px;
+
+    margin-top: 10px;
+  }
+}
+
+
+// SPEC GRID
+
+.spec-grid {
+  display: grid;
+
+  grid-template-columns:
+        repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+
+// SPEC CARD
+
+.spec-card {
+  padding: 30px;
+
+  background: $white;
+
+  border: 1px solid $border;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  transition: 0.3s ease;
+
+
+  &:hover {
+    transform: translateY(-4px);
+
+    border-color: $black;
+  }
+
+
+  span {
+    color: $gray;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+  }
+
+
+  strong {
+    font-size: 19px;
+  }
+}
+
+
+// RESPONSIVE
+
+@media (max-width: 900px) {
+
+  .selected-car {
+    grid-template-columns: 1fr;
+  }
+
+
+  .spec-grid {
+    grid-template-columns:
+            repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .spec-hero h1 {
+    font-size: 48px;
+  }
+
+
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .selected-car__content {
+    padding: 30px;
+  }
+
+
+  .selected-car__content h2 {
+    font-size: 35px;
+  }
+
+}
