@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Header } from './componont/header/header';
-import { Content } from './componont/content/content';
+import { Header } from './features/auth/components/header/header';
+import { Content } from './features/auth/components/content/content';
 
 @Component({
   selector: 'app-root',

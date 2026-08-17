@@ -60,7 +60,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
   }
 
   // ---------- hero ticker ----------
-  tickerStats: TickerStat[] = [
+  tickerStats : TickerStat[] = [
     { label: '0–60 mph', target: 2.9, decimals: 1, display: '0.0' },
     { label: 'Top speed', target: 205, suffix: ' mph', display: '0' },
     { label: 'Range', target: 340, suffix: ' mi', display: '0' },
@@ -217,7 +217,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
     const decimals = stat.decimals ?? 0;
     const suffix = stat.suffix ?? '';
 
-    if (this.reduceMotion) {
+    if (this.reduceMotion || typeof requestAnimationFrame === 'undefined') {
       onFrame(stat.target.toFixed(decimals) + suffix);
       return;
     }

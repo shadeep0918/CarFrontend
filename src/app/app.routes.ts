@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 import { Component } from '@angular/core';
-import { HomeComponent } from './componont/car/car';
-import {FuelTypeComponent} from './componont/fuel-type/fuel-type';
-import {  Reservation } from './componont/reservation/reservation';
-import { Specification } from './componont/specification/specification';
+  import { HomeComponent } from './features/auth/components/car/car';
+import { FuelTypeComponent } from './features/auth/components/fuel-type/fuel-type';
+import { Specification } from './features/auth/components/specification/specification';
+import { Reservation } from './features/auth/components/reservation/reservation';
 
 // 1. We create a tiny, invisible component that just shows a black background
 @Component({
