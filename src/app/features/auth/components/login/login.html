@@ -1,0 +1,43 @@
+<div class="login-page">
+  <div class="login-card">
+
+    <div class="login-card__header">
+      <h2>Welcome Back</h2>
+      <p>Please log in</p>
+    </div>
+
+    <form (ngSubmit)="onLogin()" class="login-form">
+
+      <!-- Email Input -->
+      <div class="form-group">
+        <label> (Email)</label>
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="loginObj.email"
+          required
+          placeholder="hello@example.com"
+        />
+      </div>
+
+      <!-- Password Input -->
+      <div class="form-group">
+        <label> Password</label>
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="loginObj.password"
+          required
+          placeholder="••••••••"
+        />
+      </div>
+
+      <!-- Submit Button (Using your theme's button classes) -->
+      <button type="submit" class="btn btn--primary login-btn">
+        Login
+      </button>
+
+    </form>
+
+  </div>
+</div>
