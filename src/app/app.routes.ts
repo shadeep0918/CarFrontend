@@ -4,9 +4,11 @@ import { Component } from '@angular/core';
 import { FuelTypeComponent } from './features/auth/components/fuel-type/fuel-type';
 import { Specification } from './features/auth/components/specification/specification';
 import { Reservation } from './features/auth/components/reservation/reservation';
+import { Login } from './features/auth/components/login/login';
+import  {Home} from './features/shop/home/home'
 
-// 1. We create a tiny, invisible component that just shows a black background
-@Component({
+
+ @Component({
   template: '<div style="background-color: #111111; height: 100vh; width: 100%;"></div>',
   standalone: true,
 })
@@ -14,8 +16,16 @@ export class BlankComponent {}
 
 export const routes: Routes = [
   {
+    path : 'login',
+    component : Login
+  },
+  {
+    path : 'home',
+    component : Home
+  },
+  {
     path: '',
-    component: BlankComponent,
+    redirectTo: 'home',
     pathMatch: 'full',
   },
 

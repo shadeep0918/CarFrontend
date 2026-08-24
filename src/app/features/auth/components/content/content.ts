@@ -4,6 +4,7 @@ import { Menu } from '../service/menu';
 import { MatList, MatListItem } from '@angular/material/list';
 import { RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import { MatIcon } from '@angular/material/icon';
+import {Footer} from '../footer/footer';
 
 @Component({
   selector: 'toggle-content',
@@ -17,6 +18,7 @@ import { MatIcon } from '@angular/material/icon';
     MatIcon,
     RouterOutlet,
     RouterLinkActive,
+    Footer,
   ],
   templateUrl: './content.html',
   styleUrl: './content.scss',
