@@ -60,20 +60,7 @@ $transition: 0.3s ease;
 .section-heading .view-all { font-size: 13px; font-weight: 700; &:hover { color: #777; } }
 
 .car-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-.car-card { background: $white; border-radius: $radius; overflow: hidden; border: 1px solid $border; transition: $transition; &:hover { transform: translateY(-8px); box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1); } }
-.car-card__image { height: 260px; background: #ededeb; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.car-card__image img { height: 100%; object-fit: contain; transition: $transition; }
-.car-card:hover .car-card__image img { transform: scale(1.06); }
-.car-card__badge { position: absolute; top: 15px; left: 15px; background: $black; color: $white; padding: 7px 11px; border-radius: 5px; font-size: 9px; font-weight: 800; letter-spacing: 1px; z-index: 2; }
-.car-card .favorite { position: absolute; top: 13px; right: 15px; width: 38px; height: 38px; border: 0; border-radius: 50%; background: $white; font-size: 20px; cursor: pointer; z-index: 2; transition: $transition; &:hover { background: $accent; } }
-.car-card__content { padding: 25px; }
-.car-card__brand { color: $gray; font-size: 10px; letter-spacing: 2px; font-weight: 800; }
-.car-card h3 { font-size: 21px; margin: 8px 0 20px; }
-.car-card__details { display: flex; gap: 12px; color: $gray; font-size: 10px; padding-bottom: 20px; border-bottom: 1px solid $border; }
-.car-card__bottom { padding-top: 20px; display: flex; justify-content: space-between; align-items: center; }
-.car-card__bottom small { display: block; color: $gray; font-size: 10px; margin-bottom: 4px; }
-.car-card__bottom strong { font-size: 19px; }
-.card-btn { padding: 10px 17px; border-radius: 8px; background: $black; color: $white; font-size: 11px; font-weight: 700; transition: $transition; &:hover { background: $accent; color: $black; } }
+
 
 // ==========================================
 // WHY US SECTION

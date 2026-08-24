@@ -1,1 +1,27 @@
-<p>car-card works!</p>
+<div class="car-card">
+  <div class="car-card__image">
+    <!-- Only show the NEW badge if isNew is true -->
+    @if (isNew) {
+      <span class="car-card__badge">NEW</span>
+    }
+
+    <button class="favorite">♡</button>
+    <!-- Bind the image src to the variable -->
+    <img [src]="imageUrl" [alt]="name">
+  </div>
+
+  <div class="car-card__content">
+    <span class="car-card__brand">{{ brand }}</span>
+    <h3>{{ name }}</h3>
+
+    <!-- ... details ... -->
+
+    <div class="car-card__bottom">
+      <div>
+        <small>Daily rate from</small>
+        <strong>${{ pricePerDay }}</strong>
+      </div>
+      <button class="card-btn">Rent Now</button>
+    </div>
+  </div>
+</div>

@@ -78,78 +78,35 @@
   </div>
 
   <div class="car-grid">
+
     <!-- Car Card 1 -->
-    <div class="car-card">
-      <div class="car-card__image">
-        <span class="car-card__badge">NEW</span>
-        <button class="favorite">♡</button>
-        <img src="https://pngimg.com/uploads/mercedes/mercedes_PNG80135.png" alt="Car 1">
-      </div>
-      <div class="car-card__content">
-        <span class="car-card__brand">MERCEDES</span>
-        <h3>Mercedes-Benz C-Class</h3>
-        <div class="car-card__details">
-          <span>⚙️ Automatic</span>
-          <span>⛽ Petrol</span>
-          <span>👤 5 Seats</span>
-        </div>
-        <div class="car-card__bottom">
-          <div>
-            <small>Daily rate from</small>
-            <strong>$120</strong>
-          </div>
-          <button class="card-btn">Rent Now</button>
-        </div>
-      </div>
-    </div>
+    <app-car-card
+      brand="MERCEDES"
+      name="Mercedes-Benz C-Class"
+      [pricePerDay]="120"
+      imageUrl="https://pngimg.com/image/1858"
+      [isNew]="true">
+    </app-car-card>
 
     <!-- Car Card 2 -->
-    <div class="car-card">
-      <div class="car-card__image">
-        <button class="favorite">♡</button>
-        <img src="https://pngimg.com/uploads/bmw/bmw_PNG1696.png" alt="Car 2">
-      </div>
-      <div class="car-card__content">
-        <span class="car-card__brand">BMW</span>
-        <h3>BMW 5 Series</h3>
-        <div class="car-card__details">
-          <span>⚙️ Automatic</span>
-          <span>⛽ Diesel</span>
-          <span>👤 5 Seats</span>
-        </div>
-        <div class="car-card__bottom">
-          <div>
-            <small>Daily rate from</small>
-            <strong>$135</strong>
-          </div>
-          <button class="card-btn">Rent Now</button>
-        </div>
-      </div>
-    </div>
+    <app-car-card
+      brand="BMW"
+      name="BMW 5 Series"
+      [pricePerDay]="135"
+      imageUrl="https://pngimg.com/uploads/bmw/bmw_PNG1696.png"
+      [isNew]="true">
+    </app-car-card>
+
+
 
     <!-- Car Card 3 -->
-    <div class="car-card">
-      <div class="car-card__image">
-        <button class="favorite">♡</button>
-        <img src="https://pngimg.com/uploads/audi/audi_PNG1765.png" alt="Car 3">
-      </div>
-      <div class="car-card__content">
-        <span class="car-card__brand">AUDI</span>
-        <h3>Audi A6</h3>
-        <div class="car-card__details">
-          <span>⚙️ Automatic</span>
-          <span>⛽ Hybrid</span>
-          <span>👤 5 Seats</span>
-        </div>
-        <div class="car-card__bottom">
-          <div>
-            <small>Daily rate from</small>
-            <strong>$110</strong>
-          </div>
-          <button class="card-btn">Rent Now</button>
-        </div>
-      </div>
-    </div>
+    <app-car-card
+      brand="AUDI"
+      name="Audi A6"
+      [pricePerDay]="115"
+      imageUrl="https://pngimg.com/uploads/audi/audi_PNG1765.png"
+      [isNew]="true">
+    </app-car-card>
   </div>
 </section>
 

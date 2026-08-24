@@ -9,5 +9,8 @@ import { Component, Input } from '@angular/core';
 export class CarCard {
   @Input() brand: string = 'MERCEDES';
   @Input() name: string = 'Mercedes-Benz C-Class';
+  @Input() pricePerDay : number = 120;
+  @Input() imageUrl : string = '';
+  @Input() isNew : boolean = false;
 
 }
